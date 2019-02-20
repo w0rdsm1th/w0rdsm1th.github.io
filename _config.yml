@@ -1,0 +1,45 @@
+# see https://jekyllrb.com/docs/configuration/
+
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Flexible Framework
+email: aleks.hughes@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Aleks Hughes's personal blog on Python, R, Data Science and maths
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://flexibleframework.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: alekshug
+github_username:  w0rdsm1th
+future: true
+
+# Build settings
+markdown: kramdown
+# theme: minima
+theme: jekyll-theme-minimal
+permalink: /:year/:month/:title/
+plugins:
+  - jekyll-feed
+
+exclude:
+    - posts_materials/*
+    - notes.txt
+    - .gitignore
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Gems - paginate from css wizardry and rest from https://help.github.com/articles/configuring-jekyll-plugins/
+# gems: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap, jemoji]
+
