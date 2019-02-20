@@ -20,8 +20,8 @@ future: true
 
 # Build settings
 markdown: kramdown
-# theme: minima
-theme: jekyll-theme-minimal
+theme: minima
+# theme: jekyll-theme-minimal  # github pages plugin
 permalink: /:year/:month/:title/
 plugins:
   - jekyll-feed

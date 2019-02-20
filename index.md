@@ -5,9 +5,9 @@ layout: home
 permalink:
 ---
 
-### Under development
+### Site under development
 
-Hi! welcome to my site
+Hi! welcome to my site.
 
+A little bit [about me](about/).
 
-link to [about me](about/)
