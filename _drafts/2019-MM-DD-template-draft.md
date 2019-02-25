@@ -5,7 +5,7 @@ layout: post
 title: ""
 tags: [data science, maths, techniques,
 computer science, programming,
-r, python, 
+r, python,
 lecture notes,
 ]
 ---
