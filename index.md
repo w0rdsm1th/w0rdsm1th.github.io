@@ -1,6 +1,6 @@
 ---
 layout: home
-image: "/assets/data+science home banner.png"
+image: "/assets/data+science home banner.jpg"
 sub_title: "aleks hughes's personal blog"
 permalink:
 ---
@@ -9,7 +9,7 @@ Hi, welcome to my personal blog! Thanks for stopping by.
 
 A flexible framework is an idea of programming nirvana. The application structure, pattern and approach is _just right_. It is flexible enough to meet as-yet unknown extensions but rigid and framework-y enough to meet the current challenge.
 
-The extension (.xyz) is because it is multi-dimensional (geddit, cartesian co-ordinate axes) and conveniently also one of the cheapest domain name extensions available on (NameCheap)[https://www.namecheap.com/].
+The extension (.xyz) is because it is multi-dimensional (geddit, cartesian co-ordinate axes) and conveniently also one of the cheapest domain name extensions available on [NameCheap](https://www.namecheap.com/).
 
 Some more [about me](about/).
 
