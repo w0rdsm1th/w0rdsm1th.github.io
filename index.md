@@ -1,6 +1,6 @@
 ---
 layout: home
-image: "/assets/data+science home banner.jpg"
+image: "/assets/data+science home banner.JPG"
 sub_title: "aleks hughes's personal blog"
 permalink:
 ---
