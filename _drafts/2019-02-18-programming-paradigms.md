@@ -1,7 +1,6 @@
-
 ---
 layout: post
-title: Programming Paradigms
+title: "Programming Paradigms"
 tags: [programming, computer science]
 ---
 
@@ -11,7 +10,6 @@ I read the boldly titled "[Programming Paradigms for Dummies: What Every Program
 
 ## What is a programming paradigm?
 > "A definition"
-
 
 
 ## The authors really like their own language, Oz

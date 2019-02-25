@@ -18,11 +18,22 @@ twitter_username: alekshug
 github_username:  w0rdsm1th
 future: true
 
+highlighter: pygments  # https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting
+
 # Build settings
 markdown: kramdown
-theme: minima
-# theme: jekyll-theme-minimal  # github pages plugin
+# theme: minima
+theme: jekyll-theme-minimal
 permalink: /:year/:month/:title/
+
+# defaults:
+#  -
+#     scope:
+#       path: "" # an empty string here means all files in the project
+#       type: "posts"
+#     values:
+#       layout: "default"
+
 plugins:
   - jekyll-feed
 
@@ -42,4 +53,3 @@ exclude:
 
 # Gems - paginate from css wizardry and rest from https://help.github.com/articles/configuring-jekyll-plugins/
 # gems: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap, jemoji]
-
