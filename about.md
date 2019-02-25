@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 title: "about me"
 permalink: "/about/"
 ---
@@ -16,14 +16,9 @@ Otherwise I like food (coffee is a food right?), bicycles and basketball.
 
 :smiley:
 
-## what is this?
-The name comes from an idea of programming nirvanna: the application structure, pattern and approach is _just right_. It is flexible enough to meet as-yet unknown extensions or requirements but rigid and framework-y enough to meet the current challenge.
-
-The extension (.xyz) is because it is multi-dimensional (geddit, cartesian co-ordinate axes) and conveniently also one of the cheapest domain name extensions available on (NameCheap.com)[https://www.namecheap.com/].
 
 ## what can we expect?
-- list of my current posts tags: {{ site.tags }}
-
+- list of my current posts tags: TODO <!-- {{ site.tags }} -->  
 - short: posts are <1000 words or ~7 minute read. Which seems _[just right](https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b)_.
 
 - practical: embedded code snippets and a couple (not too many) visuals.

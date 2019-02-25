@@ -1,11 +1,16 @@
 ---
 layout: home
+image: "assets/data+science home banner.png"
 permalink:
 ---
-![a nice pic of me](/assets/IMG-20180805-WA0012.jpg){:class="img-responsive" height="90px" width="90px", float="right"}
 
 Hi, welcome to my personal blog! Thanks for stopping by.
 
-A little bit [about me and the site](about/).
+A flexible framework is an idea of programming nirvana. The application structure, pattern and approach is _just right_. It is flexible enough to meet as-yet unknown extensions but rigid and framework-y enough to meet the current challenge.
 
-[My cv](/assets/current_cv.pfg)
+The extension (.xyz) is because it is multi-dimensional (geddit, cartesian co-ordinate axes) and conveniently also one of the cheapest domain name extensions available on (NameCheap)[https://www.namecheap.com/].
+
+Some more [about me](about/).
+
+<!-- CV not linked yet, to figure out symlink for the file -->
+<!-- [My cv](/assets/current_cv.pfg) -->
