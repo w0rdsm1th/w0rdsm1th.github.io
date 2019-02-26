@@ -1,7 +1,9 @@
 ---
-layout: post
-title: "learning to code: notes from a 'veteran'"
-read_time: true
+layout: single
+title: "Main title"
+# alt_title: "learning to code: notes from a 'veteran'"
+# sub_title: "posts sub title"
+image: "assets/201902/seasoned_veteran.jpg"
 tags: [data science,
 computer science, programming,
 r, python,
@@ -58,7 +60,7 @@ https://www.youtube.com/watch?v=cKPlPJyQrt4&t=3s
 ## approach to learning
 -	Keep a log of how you solve a problem, and then once solved how your method stacks up against the “gold standard”. End goal is to build up log of lessons learned and which specific pattern solved the problem. This log can be multi-line comments in a script, e.g.
 
-```python
+```
 “””LESSONS LEARNED
 - tried nested for loop that iterated over every single combination
 - better solution: while loop with stride of 2 and break when found because only need to consider odd numbers
