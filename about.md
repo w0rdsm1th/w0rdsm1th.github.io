@@ -5,6 +5,7 @@ permalink: "/about/"
 ---
 
 ## who am i?
+<!-- {% include figure image_path="/assets/IMG-20180805-WA0012.jpg" alt="a nice pic of me on a sunny day" caption="a nice pic of me on a sunny day" float="right" height="341px" width="256px"%} -->
 ![a nice pic of me on a sunny day](/assets/IMG-20180805-WA0012.jpg){: .align-right height="341px" width="256px" caption="a nice pic of me on a sunny day"}
 
 I am a data scientist located in London, UK. I'm specifically interested in Natural Language Processing (NLP), Topological Data Analysis (TDA) and general programming languages and paradigms.
