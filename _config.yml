@@ -8,52 +8,80 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Flexible Framework
-description: >- # this means to ignore newlines until "baseurl:"
+
+remote_theme             : "mmistakes/minimal-mistakes@4.15.2"
+
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-GB"
+lang                     : "en-GB"
+title                    : "Flexible Framework"
+title_separator          : "-"
+name                     : &name "Aleks Hughes" # &name is a YAML anchor which can be *referenced later
+description              : >- # this means to ignore newlines until "baseurl:"
   Aleks Hughes's personal blog on Python, R, Data Science and maths
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://flexibleframework.xyz" # the base hostname & protocol for your site, e.g. http://example.com
-lang: en-GB
-email: aleks.hughes@gmail.com
+url                      : "https://flexibleframework.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+repository               : "mmistakes/minimal-mistakes"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+
+
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : lunr # lunr (default), algolia
+
+# SEO Related
+google_site_verification : "PZsvgKiUFJjgyhEtyAu9G1yoX7Wlhx9CXtG21Ycvb6w" # Replace this with your ID, or delete
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+
+#see https://mmistakes.github.io/minimal-mistakes/docs/layouts/#author-profile
 author:
   name: Aleks Hughes
-  twitter: alekshug
-  picture: /assets/IMG-20180805-WA0012.jpg
-twitter_username: alekshug
-github_username:  w0rdsm1th
-future: true  # allows future dated posts
-search: true  # allows site wide search https://github.com/mmistakes/jekyll-theme-basically-basic#search
-# pygments unsupported with github, only supports
-# highlighter: pygments  # https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting
+  bio: "todo my bio."
+  location: "London, UK"
+  # email: aleks.hughes@gmail.com
+  # twitter: alekshug
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:aleks.hughes@gmail.com
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/alekshug"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/w0rdsm1th"
 
-# Build settings
-markdown: kramdown
-remote_theme: "mmistakes/jekyll-theme-basically-basic"
-permalink: /:year/:month/:title/
+# Site Footer
+footer:
+  links:
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/mmistakes"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/mmistakes"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/mmistakes"
 
-copyright: "built using Jekyll and the Basically Basic theme. Content copyright Aleks Hughes 2019"
-
-# over rides navigation area appearance and ordering https://github.com/jekyll/minima
-# for https://github.com/mmistakes/jekyll-theme-basically-basic#github-pages-method
-# set in  /_data/theme.yml as navigation_pages
-# header_pages:
-#   - about.md
-
-# defaults:
-#  -
-#     scope:
-#       path: "" # an empty string here means all files in the project
-#       type: "posts"
-#     values:
-#       layout: "default"
-
-plugins:
-  - jekyll-feed
-
+# Reading Files
+include:
+  - .htaccess
+  - _pages
 exclude:
     - posts_materials/*
     - notes.txt
     - .gitignore
+    - README
+    - .sass-cache
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 #   - Gemfile
@@ -63,6 +91,92 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+keep_files:
+  - .git
+  - .svn
 
-# Gems - paginate from css wizardry and rest from https://help.github.com/articles/configuring-jekyll-plugins/
-# gems: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap, jemoji]
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Build settings
+markdown: kramdown
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+future: true  # allows future dated posts
+permalink: /:year/:month/:title/
+
+# pygments unsupported with github, only supports rouge
+# highlighter: pygments  # https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting
+
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Collections
+# collections:
+#   docs:
+#     output: true
+#     permalink: /:collection/:path/
+
+
+defaults:
+  - scope:
+      # an empty string here means all files in the project
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      toc: true
+      header:
+        overlay_color: "#333"
+        overlay_filter: 0.5
+        # overlay_filter: rgba(255, 0, 0, 0.5)
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-gist
+
+  # mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+copyright: "built using Jekyll and the Basically Basic theme. Content copyright Aleks Hughes 2019"
