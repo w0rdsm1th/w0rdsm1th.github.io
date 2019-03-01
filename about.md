@@ -1,10 +1,13 @@
 ---
 layout: single
-title: "about me"
-permalink: "/about/"
+title: about me
+permalink: /about/
+excerpt: some words about me
+last_modified_at: 2019-03-01
 ---
 
 ## who am i?
+<!-- trying to include a caption, lost the  -->
 <!-- {% include figure image_path="/assets/IMG-20180805-WA0012.jpg" alt="a nice pic of me on a sunny day" caption="a nice pic of me on a sunny day" float="right" height="341px" width="256px"%} -->
 ![a nice pic of me on a sunny day](/assets/IMG-20180805-WA0012.jpg){: .align-right height="341px" width="256px" caption="a nice pic of me on a sunny day"}
 
