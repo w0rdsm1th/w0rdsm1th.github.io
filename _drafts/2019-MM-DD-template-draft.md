@@ -5,7 +5,7 @@ layout: single
 title: template draft
 excerpt: ""
 last_modified_at: ""
-tags: [data science, maths, techniques,
+tags: [intro to, data science, maths, techniques,
 computer science, programming,
 r, python,
 lecture notes,
