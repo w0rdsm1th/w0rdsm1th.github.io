@@ -5,7 +5,7 @@ title: >
 excerpt: tips on the learning process from a seasoned, crusty, old sea dog
 last_modified_at: 2019-03-12
 header:
-  overlay_image: "assets/201902/An-old-sea-dog-e1450900914569.jpg"
+  overlay_image: "assets/2019/02/An-old-sea-dog-e1450900914569.jpg"
 tags: [intro to, data science,
 computer science, programming,
 r, python,
@@ -17,7 +17,7 @@ I started programming Python in 2014 and have since gotten pretty good at it. I 
 This post is targeted at somebody starting to learn programming from scratch. Your learning timelines and objectives unknown (specialising in a specific area, for a job or hobby).
 
 Reader objectives from this post:
-- what a successful "learning to code" journey looks like
+- see what a successful "learning to code" journey looks like
 - common pitfalls and feelings
 - habits for learning effectively
 - encouragement and setting realistic expectations
@@ -49,7 +49,7 @@ Here I list key turning points and supporting links in my python learning curve.
   - [katacoda](https://www.katacoda.com/): similar to codeacademy but users submit courses.
   - [Datacamp](https://www.datacamp.com/home): for data science, R and Python specifically.
 2.	Algorithm design and what the computer is doing under the covers: [Coursera computer science 101 MOOC](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/). There are a range of equivalent MOOCs out there.
-3.	Couple other python assisted walkthroughs: e.g. Al Sweigart’s automate the boring stuff.
+3.	Couple other python assisted walkthroughs: [Al Sweigart’s Automate the Boring Stuff](https://automatetheboringstuff.com/) and [How to Think Like a Computer Scientist](http://www.openbookproject.net/thinkcs/python/english2e/).
 4.	Challenges for practicing algorithm design _by yourself_: [Project euler](https://projecteuler.net/) and [advent of code](https://adventofcode.com/). You should never look at the solutions while solving. But they are a good to benchmark how others do it.
   - [Project Euler optimised solutions](http://www.s-anand.net/euler.html)
   - Peter Norvig's [Advent of Code solutions](https://github.com/norvig/pytudes/blob/master/ipynb/Advent%202017.ipynb). Peter is Google CTO and co-wrote [bible of AI](http://aima.cs.berkeley.edu/). His code is the gold standard: efficient, clean and modular logic. There is a lot of beautifully written Python in his github repo!
@@ -80,8 +80,8 @@ Here I list key turning points and supporting links in my python learning curve.
 
 ## my tooling and setup
 -	IDE: IntelliJ with the python plugin, basically the same as PyCharm but a few more IDE options and multilingual support. IntelliJ integrates so well with other tools e.g. virtual environment manager, version control, testing and deployment. Its also really easy to customise and sync using your JetBrains account e.g. [apply a badass colour scheme](http://color-themes.com/?view=index). I have also recently started using MS Visual Studio and it does _some_ things better.
-- a nice raw text editor: Notepad++ on Windows, Sublime sounds nice for mac (I've never used it). Recently started using github's [Atom](https://atom.io/) which is cross platform, really lightweight, nicely packaged out of the box (read: default dark themed and split screen), extendible, pretty good completion and really nifty shortcuts (just "A" to create a new file!!! :open_mouth:).
--	Miniconda for environment management. I really recommend investing time to understand virtual environments. They are the topic of my next post. In a nutshell they control your project's the installed library versions. Often so-so hard to replicate results because of peoples hacky-as-shit setups.
+- a nice raw text editor: Notepad++ on Windows, Sublime sounds nice for mac (I've never used it). Recently started using github's [Atom](https://atom.io/) which is cross platform, integrates well with version control (unsurprisingly), lightweight, nicely packaged out of the box (read: default dark themed and split screen), extendible, pretty good completion and really nifty shortcuts (just "a" to add a new file!!! :open_mouth:).
+-	Environment management: conda. I really recommend investing time to understand virtual environments. They are the topic of my next post. In a nutshell they control your project's the installed library versions. Often so-so hard to replicate results because of peoples hacky-as-shit setups.
   - The big advantage conda has over other virtual environment manager (venv and pipenv) is that it allows you to specify a specific version of python that is different to the base anaconda python (e.g. base version is 3.6.4 but can install any 3.X).
   - Here is a [template conda yml file](/assets/2019-02/template_conda_env.yml). You should modify this file: e.g. set the environment name and python version. [Here's the conda docs section how to to create an environment using a yml](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
 -	Testing: pytest and unittest together. I strongly recommend getting familiar with [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development).
