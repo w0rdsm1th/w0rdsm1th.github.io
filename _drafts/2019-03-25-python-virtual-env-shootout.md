@@ -1,10 +1,9 @@
 ---
 layout: single
 title: >
-  python virtual environments: which one is the best?
+  python virtual environment managers: which one's the best?
 excerpt: functional review of 3 popular virtual environment managers
 last_modified_at: 2019-03-25
-comments: true
 tags: [intro to, programming, python]
 ---
 <!-- reference style links -->
@@ -15,30 +14,29 @@ tags: [intro to, programming, python]
 <!-- end reference style links -->
 
 <!-- #TODO
-- a judgement of which is best for what??
+- a judgement of which is best for what?? "the verdict"
 -
 [conda's yaml][conda yaml], [pipenv's Pipfile][pipenv Pipfile] (weirdly doesnt allow an extension, but not pipenv's fault) and venv which uses a pip [requirements.txt][pip requirements.txt].
 -->
-{:refdef: .
-See my [previous post][intro virtual environments] introducing virtual environments as a concept, why you should use them and a glossary of commonly used terms.
-{: refdef)
+
+See my [previous post][intro virtual environments] introducing virtual environments, why you should use them and a glossary of commonly used terms.
+{: .notice}
 
 > When doing anything in Python "There should be one – and preferably only one – obvious way to do it."
 > <cite>Tim Peters, the Zen of Python in the `import this` Easter egg<sup id="a1">[1](#f1)</sup></cite>
 
-Confusingly there are 3+ different and good virtual environment managers out there. The standard library [venv](https://docs.python.org/3/library/venv.html), now pretty established Anaconda's [conda](https://conda.io/en/latest/index.html), and the new kid [pipenv](https://pipenv.readthedocs.io/en/latest/). Here I compare the 3 options, focusing on the practical and functional differences in their design. This is not a tutorial or review of a specific release.
+Confusingly there are 3+ good virtual environment managers out there. The standard library [venv](https://docs.python.org/3/library/venv.html), now pretty established [conda](https://conda.io/en/latest/index.html), and the new kid [pipenv](https://pipenv.readthedocs.io/en/latest/). Here I compare the 3 options, focusing on the practical and functional differences in their design. This is not a tutorial or review of a specific release.
 
 Reader objectives from this post:
 - Learn the core functional differences between 3 leading virtual environment managers.
 - Template environment files: a [conda envrironment.yml][conda yaml], a [pipenv Pipfile][pipenv Pipfile] and a [pip requirements.txt][pip requirements.txt] that venv uses.
-
 
 ![](/assets/2019/03/venv office mexican standoff - The Office US.jpg "3 way functionality shootout"){:class="img-responsive"}
 
 ## conda
 [Jake VanderPlas blog on conda myths](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) has an interesting section on origins of conda: Guido telling first pyData conference to "build it yourself".
 
-I often see beginners struggle with the very similar terms and products: conda, miniconda and anaconda. I differentiate between them below.
+I often see beginners struggle with the very similar terms and products: conda, miniconda and anaconda. Before diving into functionality, I differentiate between them below.
 
 conda
 : command line environment manager and package installer e.g. `conda env list`. The [conda docs](https://conda.io/en/latest/index.html).
