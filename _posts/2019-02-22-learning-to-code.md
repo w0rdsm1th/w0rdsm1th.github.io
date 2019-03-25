@@ -4,6 +4,7 @@ title: >
   learning to code
 excerpt: tips on the learning process from a seasoned, crusty, old sea dog
 last_modified_at: 2019-03-12
+classes: wide
 header:
   overlay_image: "assets/2019/02/An-old-sea-dog-e1450900914569.jpg"
 tags: [intro to, data science,

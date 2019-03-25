@@ -4,6 +4,7 @@ title: >
   intro to: python virtual environments
 excerpt: why you should use them and a functional difference review of 3 popular virtual environment managers
 last_modified_at: 2019-03-19
+classes: wide
 header:
   overlay_image: "/assets/2019/03/snakemassage3-COURTESY CAPTIVATINGCEBU-YOUTUBE - cropped.jpg"
   caption: "Photo credit: [**CAPTIVATINGCEBU**](https://www.youtube.com/user/captivatingcebu)"
@@ -241,6 +242,9 @@ Sub-dependency
 : Libraries themselves often require other libraries. Fortunately good installers identify what is needed and install in one swoop. Generally __don't__ go specifying every sub-dependency required to run your code, `pip` should resolve these.
 E.g. Scikit-Learn depends on numpy, which itself depends on...
 
+TOML
+: "Tom's Obvious, Minimal Language", see https://en.wikipedia.org/wiki/TOML, https://github.com/toml-lang/toml.
+
 Virtual Environment
 : self-contained, controlled collection of installed libraries. It can include a python interpreter. They are disposable, created for a specific purpose or project.
 
@@ -263,10 +267,8 @@ https://stackoverflow.com/questions/31384639/what-is-pythons-site-packages-direc
 https://stackoverflow.com/a/31384640/3596968
 
 YAML / yaml / yml
-: "Yaml Aint Markup Language". https://noyaml.com/
-Abbreviated as yml for 3 letter file extensions.
-
+: "Yaml Aint Markup Language", see https://yaml.org/ and the fun parody https://noyaml.com/.
 
 
 <!-- footnotes -->
-<b id="f1">1</b> A fun Python Easter egg. Try it yourself! And then [read about it here.](https://www.python.org/dev/peps/pep-0020)[↩](#a1)
+<b id="f1">1</b> A fun Python Easter egg. Try it yourself and then [read about it here.](https://www.python.org/dev/peps/pep-0020) [↩](#a1)
