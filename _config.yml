@@ -129,7 +129,10 @@ kramdown:
 #   docs:
 #     output: true
 #     permalink: /:collection/:path/
-
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "flexibleframework"
 
 defaults:
   - scope:
@@ -140,11 +143,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      # comments: true
-      comments:
-        provider: "disqus"
-        disqus:
-          shortname: "flexibleframework"
+      comments: true
       share: true
       related: true
       classes: wide  # wide text, takes place of table of contents

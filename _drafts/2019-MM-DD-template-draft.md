@@ -10,11 +10,16 @@ r, python,
 lecture notes,
 ]
 ---
+<!-- #TODO
+-
+-->
+
+<!-- reference style links -->
+[the goog]: https://google.com
+<!-- end reference style links -->
+
 
 Content before footnote link<sup id="a1">[1](#f1)</sup>
 
 <!-- footnotes -->
 <b id="f1">1</b> footnote contents [↩](#a1)
-
-<!-- reference style links -->
-[the goog]: https://google.com
