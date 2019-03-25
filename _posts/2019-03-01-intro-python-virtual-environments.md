@@ -1,27 +1,27 @@
 ---
 layout: single
 title: >
-  intro to: python virtual environments
+  intro to python virtual environments
 excerpt: why you should use them, protips and glossary of common terms
 last_modified_at: 2019-03-19
-comments: true
 header:
   overlay_image: "/assets/2019/03/snakemassage3-COURTESY CAPTIVATINGCEBU-YOUTUBE - cropped.jpg"
   caption: "Photo credit: [**CAPTIVATINGCEBU**](https://www.youtube.com/user/captivatingcebu)"
 tags: [intro to, programming, python]
 ---
-<!-- #TODO
-- project workflow diagram? create env, update env,
-- module definition is correct according to https://packaging.python.org/overview/#python-modules
--->
 
 <!-- reference style links -->
 [conda yaml]: assets/2019/03/template_conda_env.yml
 [pipenv Pipfile]: assets/2019/03/Pipfile
 [pip requirements.txt]: assets/2019/03/requirements.txt
+[virtual environment managers]: _drafts\2019-03-25-python-virtual-env-shootout.md
 <!-- end reference style links -->
 
-![](https://imgs.xkcd.com/comics/python_environment.png "prevent Python paralysis: use virtual environments"){:class="img-responsive"}
+See my [next post][virtual environment managers] about which virtual environment manager is best suited for your needs.
+{: .notice}
+
+
+![](https://imgs.xkcd.com/comics/python_environment.png "prevent Python paralysis: use virtual environments"){:class="img-responsive" .align-center}
 
 When I first started learning Python virtual environments seemed abstract and unimportant. I could get setup and code some badass stuff right now, why bother to learn about them? And they take a little while to learn. But learning to use them has taken away a lot of the frequent problems I was facing at the start. And they have been a great primer for thinking about the interpreter and environment that is actually making my code run.
 
@@ -74,16 +74,15 @@ Below I list other benefits to being able to isolate and control a project's dep
 2. A little overhead to set up at the start of a project.
 3. Some discipline to maintain during a project.
 
-{:refdef: .notice--warning}
 **ProTip!:** keep your project dependencies to a minimum. Even if you are superb at managing virtual environments. I have worked on projects where the team will use multiple different packages for similar tasks. Their dependency list just grows and grows. This is a risk because each new dependency introduces something else to break, install and understand.
-{: refdef}
+{: .notice--warning}
 
 ## virtual environment protips
 - While you can install packages on the fly using pip, it is good practice and efficient to standardise virtual environment creation using a file to ensure reproducibility. I use a template for each manager which contains the structure and syntax of the more advanced usages: [conda's yaml][conda yaml], [pipenv's Pipfile][pipenv Pipfile] (doesnt allow an extension) and venv which uses a pip [requirements.txt][pip requirements.txt].
 - If distributing your environment file so others can run your app, or , it is recommend to specify dependency versions with ==, or specific major version with =. or specify a minimum version with >=.
 - All the environment files support installing from GitHub (even a specific commit!) and the templates above contain sample syntax.
 
-Be aware: no one way to activate single virtual environment manager (venv) on same OS (Windows).
+Be aware: no one way to activate single virtual environment manager (venv) on same OS.
 ![](/assets/2019/03/venv activation commands - python docs venv.html creating-virtual-environments.JPG "be aware: no one way to activate even same virtual environment manager"){:class="img-responsive"}
 
 ## glossary of common terms
@@ -93,8 +92,7 @@ Package (or library, APIs,...)
 : Some people call them "APIs" because its an interface between your code and somebody elses.
 
 Module
-: > Importable chunks of code. Can be in a single script.
--- from Python [official docs](https://docs.python.org/2/tutorial/modules.html)
+: Importable chunks of code. Can be in a single script. See the Python [official tutorial on modules](https://docs.python.org/2/tutorial/modules.html)
 
 Package repository (or repo, mirror)
 : online collection of packages. For example these free, open source repos: [PyPi](https://pypi.org), [Anaconda Cloud](https://anaconda.org/anaconda/repo), [CRAN](https://cran.r-project.org/) for R. A 'mirror' is often an organisations internal controlled version E.g. big banks like to control what people are using.
@@ -104,11 +102,12 @@ Python standard library
 
 Pinned dependency packages
 : Tying your project to a dependency's specific major.minor version number. See [this blog post](https://nvie.com/posts/pin-your-packages/) from the developer of `pip-tools` package. *Avoid* below patterns that are vague about version in your project requirements.txt (or conda.yaml or Pipfile,...):
-- `lxml`
-- `lxml>=2.2.0`
-- `lxml>=2.2.0,<2.3.0`
-Instead, pin the dependency:
-- `lxml==2.3.4`
+    - `lxml`
+    - `lxml>=2.2.0`
+    - `lxml>=2.2.0,<2.3.0`
+
+  Instead, pin the dependency:
+    - `lxml==2.3.4`
 
 Dependency
 : other libraries needed to make your own code or an external package run. E.g. Scikit-Learn needs or __depends on__ numpy for its numerical functions. So if you download Scikit-Learn then `pip` should identify this dependency relationship and install numpy too. Good libraries will be explicit about their dependency list.
