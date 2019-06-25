@@ -4,7 +4,6 @@ title: >
   learning to code
 excerpt: tips on the learning process from a seasoned, crusty, old sea dog
 last_modified_at: 2019-03-12
-classes: wide
 header:
   overlay_image: "assets/2019/02/An-old-sea-dog-e1450900914569.jpg"
 tags: [intro to, data science,
@@ -15,7 +14,7 @@ r, python,
 
 I started programming Python in 2014 and have since gotten pretty good at it. I have gone on to  build applications using R, SQL and Kotlin.<sup id="a1">[1](#f1)</sup>
 
-This post is targeted at somebody starting to learn programming from scratch. Your learning timelines and objectives unknown (specialising in a specific area, for a job or hobby).
+This post is targeted at somebody starting to learn programming from scratch. Your learning timelines and objectives unknown (e.g. specialising in a type of coding, for a job or hobby).
 
 Reader objectives from this post:
 - see what a successful "learning to code" journey looks like
@@ -39,9 +38,8 @@ A lot of people feel intimidated by learning to code. Some common fears or feeli
 - Messing up your computer. This is honestly pretty hard to do as a beginner, especially if you use virtual environments. See my [post on "intro to virtual environments"](_posts/2019-03-01-intro-python-virtual-environments.md).
 - You feel like you don't have the raw passion to succeed. It helps to be interested in computers but I didn't **love** computers at the start. I had an appreciation, but it has taken me a while to see what was possible.
 
-{:refdef: .notice--info}
 **ProTip!:** develop the ability to [read and navigate original documentation](https://readthedocs.com/).
-{: refdef}
+{: .notice--info}
 
 ## milestones in my python learning curve
 Here I list key turning points and supporting links in my python learning curve. Bear in mind these milestones are spread out over 5+ years and I was pretty determined to use Python as much as possible!
@@ -83,12 +81,11 @@ Here I list key turning points and supporting links in my python learning curve.
 -	IDE: IntelliJ with the python plugin, basically the same as PyCharm but a few more IDE options and multilingual support. IntelliJ integrates so well with other tools e.g. virtual environment manager, version control, testing and deployment. Its also really easy to customise and sync using your JetBrains account e.g. [apply a badass colour scheme](http://color-themes.com/?view=index). I have also recently started using MS Visual Studio and it does _some_ things better.
 - a nice raw text editor: Notepad++ on Windows, Sublime sounds nice for mac (I've never used it). Recently started using github's [Atom](https://atom.io/) which is cross platform, integrates well with version control (unsurprisingly), lightweight, nicely packaged out of the box (read: default dark themed and split screen), extendible, pretty good completion and really nifty shortcuts (just "a" to add a new file!!! :open_mouth:).
 -	Environment management: conda. I really recommend investing time to understand virtual environments. They are the topic of my next post. In a nutshell they control your project's the installed library versions. Often so-so hard to replicate results because of peoples hacky-as-shit setups.
-  - The big advantage conda has over other virtual environment manager (venv and pipenv) is that it allows you to specify a specific version of python that is different to the base anaconda python (e.g. base version is 3.6.4 but can install any 3.X).
   - Here is a [template conda yml file](/assets/2019-02/template_conda_env.yml). You should modify this file: e.g. set the environment name and python version. [Here's the conda docs section how to to create an environment using a yml](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
 -	Testing: pytest and unittest together. I strongly recommend getting familiar with [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development).
--	Version control: git. It is so important to grasp version control. You can forget about worrying if something new will break existing code.
+-	Version control: git. It is so important to grasp version control. You can forget about worrying if a new change will break existing code.
 - Deployment: Docker.
 
-
+<!-- footnotes -->
 ## footnotes
 <b id="f1">1</b> I fully recognise that Python is a high level functional languages and many would scoff at it being called "programming". To these higher code-lords I bow and mumble incoherently. :wink: [↩](#a1)
