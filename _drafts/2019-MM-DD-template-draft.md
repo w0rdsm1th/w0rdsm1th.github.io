@@ -18,6 +18,9 @@ lecture notes,
 [the goog]: https://google.com
 <!-- end reference style links -->
 
+Reader objectives from this post:
+-
+
 
 Content before footnote link<sup id="a1">[1](#f1)</sup>
 
