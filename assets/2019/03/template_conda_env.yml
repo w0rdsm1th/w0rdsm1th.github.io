@@ -1,12 +1,13 @@
+
 # comment lines start with "#"
 # created by Aleks Hughes 2019-03-19 for my blog flexibleframework.xyz
-name: py37_template_env
+name: template_env_py38
 channels:
 - defaults
 dependencies:
 # conda installed packages are pinned with a single "=", e.g.:
 # - certifi=2018.10.15
-- python=3.7
+- python=3.8
 - pip>19.0
 - certifi
 - setuptools

@@ -1,22 +1,31 @@
 ---
 layout: single
 title: >
-  Topological Data Analysis: what's that?
-excerpt: snappy intro to TODO
+  What is Topological Data Analysis?
+excerpt: beautiful visualisation outputs, combination of other unsupervised learning methods 
 header:
   overlay_image: ""
   caption: "Photo credit: "
-last_modified_at: 2019-08-07
+last_modified_at: 2020-09-30
 tags: [intro to, data science, maths, techniques,
-r, python,
+r, python, TDA,
 ]
 ---
+
+
+
+
 <!-- #TODO
 - excerpt and overlay image
+
+
 
 Notes
 - TDA experience: what it is, how to do it, what it looks like, own lil tutorial
 - tSNE and manifold learning
+
+
+next post: code snippets and model pipeline
 
 -->
 
